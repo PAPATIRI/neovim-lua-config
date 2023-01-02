@@ -42,7 +42,7 @@ keymap("n", "<m-h>", ":bprevious<CR>", opts)
 keymap("n", "<m-c>", ":bd<CR>", opts)
 keymap("n", "<m-o>", "<C-^>", opts)
 
--- General
+-- block all text in file
 keymap("n", "<C-a>", "gg<S-v>G", opts)
 keymap("n", "<C-s>", ":w<cr>", opts)
 

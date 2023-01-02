@@ -1,23 +1,38 @@
--- stylua: ignore
+-- stylua default
+--[[ local colors = { ]]
+--[[   blue   = '#80a0ff', ]]
+--[[   cyan   = '#79dac8', ]]
+--[[   black  = '#24283b', ]]
+--[[   white  = '#ffffff', ]]
+--[[   red    = '#ff5189', ]]
+--[[   violet = '#d183e8', ]]
+--[[   grey   = '#32374c', ]]
+--[[   insert = '#00FFAB', ]]
+--[[   visual = '#FFCA03', ]]
+--[[   replace = '#FF008E', ]]
+--[[   normal = '#E94560' ]]
+--[[ } ]]
+--[[ color onedark deep ]]
 local colors = {
-  blue   = '#80a0ff',
-  cyan   = '#79dac8',
-  black  = '#24283b',
-  white  = '#ffffff',
-  red    = '#ff5189',
-  violet = '#d183e8',
-  grey   = '#32374c',
-  insert = '#00FFAB',
-  visual = '#FFCA03',
-  replace = '#FF008E',
-  normal = '#E94560'
+	blue = "#54b0fd",
+	cyan = "#34bfd0",
+	black = "#21283b",
+	white = "#93a4c3",
+	light = "#fefefe",
+	red = "#f65866",
+	violet = "#c75ae8",
+	grey = "#2a324a",
+	insert = "#34bfd0",
+	visual = "#8bcd5b",
+	replace = "#992525",
+	normal = "#dd9046",
 }
 
 --[[ normal = '#4649FF' ]]
 
 local bubbles_theme = {
 	normal = {
-		a = { fg = colors.white, bg = colors.normal },
+		a = { fg = colors.light, bg = colors.normal },
 		b = { fg = colors.white, bg = colors.grey },
 		c = { fg = colors.black, bg = colors.black },
 	},

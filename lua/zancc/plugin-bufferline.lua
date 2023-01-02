@@ -16,7 +16,7 @@ bufferline.setup({
 		close_icon = "",
 		left_trunc_marker = "",
 		right_trunc_marker = "",
-		max_name_length = 30,
+		max_name_length = 20,
 		max_prefix_length = 30, -- prefix used when a buffer is de-duplicated
 		tab_size = 20,
 		diagnostics = false, -- | "nvim_lsp" | "coc",
@@ -27,37 +27,33 @@ bufferline.setup({
 		show_close_icon = false,
 		show_tab_indicators = true,
 		persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
-		separator_style = "thin", -- | "thick" | "thin" | { 'any', 'any' },
+		separator_style = "any", -- | "thick" | "thin" | { 'any', 'any' },
 		enforce_regular_tabs = true,
 		always_show_bufferline = true,
 	},
+
 	highlights = {
 		separator = {
-			--[[ fg = "#1f2335", ]]
-			--[[ fg = "#979eab", ]]
-			fg = "#282c34",
-			bg = "#282c34",
+			bg = "#1a212e",
+			fg = "#1a212e",
 		},
 		separator_selected = {
-			--[[ fg = "#24283b", ]]
-			fg = "#282c34",
-			bg = "#282c34",
+			bg = "#1a212e",
+			fg = "#1a212e",
 		},
 		buffer_selected = {
-			--[[ fg = "fg", ]]
-			--[[ bg = "#24283b", ]]
-			fg = "#979eab",
-			bg = "#282c34",
+			bg = "#1a212e",
+			fg = "#93a4c3",
 			bold = true,
 		},
 		background = {
-			--[[ bg = "#1f2335", ]]
-			bg = "#393e48",
-			fg = "#979eab",
+			bg = "#283347",
+			fg = "#93a4c3",
 		},
 		fill = {
+			bg = "#1a212e",
 			--[[ bg = "#1f2335", ]]
-			bg = "#282c34", --ondark theme kitty and neovim theme
+			--[[ bg = "#282c34", --ondark theme kitty and neovim theme ]]
 		},
 	},
 })

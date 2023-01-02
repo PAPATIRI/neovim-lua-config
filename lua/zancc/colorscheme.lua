@@ -1,10 +1,3 @@
---[[ local colorscheme = "catppuccin" ]]
---[[ local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme) ]]
---[[ if not status_ok then ]]
---[[ 	vim.notify("colorscheme " .. colorscheme .. " not found!") ]]
---[[ 	return ]]
---[[ end ]]
--- Lua
 require("tokyonight").setup({
 	-- your configuration comes here
 	-- or leave it empty to use the default settings
@@ -102,7 +95,7 @@ require("onenord").setup({
 
 require("onedark").setup({
 	-- Main options --
-	style = "dark", -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+	style = "deep", -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
 	transparent = false, -- Show/hide background
 	term_colors = true, -- Change terminal color as per the selected theme style
 	ending_tildes = false, -- Show the end-of-buffer tildes. By default they are hidden
@@ -125,7 +118,7 @@ require("onedark").setup({
 
 	-- Lualine options --
 	lualine = {
-		transparent = false, -- lualine center bar transparency
+		transparent = true, -- lualine center bar transparency
 	},
 
 	-- Custom Highlights --

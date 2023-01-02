@@ -28,6 +28,9 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- open file explorer
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
+-- change filetype js/ts to javascript/typescript react
+keymap("n", "<C-x>", ":set filetype=javascriptreact<CR>", opts)
+
 keymap("n", "<leader>ib", ":IndentBlanklineToggle<cr>", opts)
 
 -- Resize with arrows

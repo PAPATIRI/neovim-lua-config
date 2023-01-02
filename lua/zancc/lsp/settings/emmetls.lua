@@ -10,5 +10,5 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 return {
 	capabilities = capabilities,
-	filetypes = { "html", "css", "javascript", "typescriptreact", "javascriptreact" },
+	filetypes = { "html", "css", "scss", "sass", "less", "typescriptreact", "javascriptreact" },
 }

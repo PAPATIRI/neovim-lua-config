@@ -3,6 +3,7 @@ if not status_ok then
 	return
 end
 
+--[[ vim.g.indentLine_enabled = false ]]
 vim.g.indent_blankline_buftype_exclude = { "terminal", "nofile" }
 vim.g.indent_blankline_filetype_exclude = {
 	"help",
@@ -12,8 +13,8 @@ vim.g.indent_blankline_filetype_exclude = {
 	"neogitstatus",
 	"NvimTree",
 	"Trouble",
+	"alpha",
 }
-vim.g.indentLine_enabled = 1
 -- vim.g.indent_blankline_char = "│"
 vim.g.indent_blankline_char = "▏"
 -- vim.g.indent_blankline_char = "▎"

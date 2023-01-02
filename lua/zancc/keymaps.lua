@@ -28,6 +28,8 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- open file explorer
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
+keymap("n", "<leader>ib", ":IndentBlanklineToggle<cr>", opts)
+
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
@@ -35,10 +37,10 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "<C-l>", ":bnext<CR>", opts)
-keymap("n", "<C-h>", ":bprevious<CR>", opts)
-keymap("n", "<C-c>", ":bd<CR>", opts)
-keymap("n", "<C-o>", "<C-^>", opts)
+keymap("n", "<m-l>", ":bnext<CR>", opts)
+keymap("n", "<m-h>", ":bprevious<CR>", opts)
+keymap("n", "<m-c>", ":bd<CR>", opts)
+keymap("n", "<m-o>", "<C-^>", opts)
 
 -- General
 keymap("n", "<C-a>", "gg<S-v>G", opts)
@@ -53,7 +55,7 @@ keymap("i", "jj", "<ESC>", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
--- Move text up and down
+-- Move text up and down with shift+key
 keymap("v", "<A-j>", ":m .+1<CR>", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
@@ -71,23 +73,6 @@ keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
--- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-local builtin = require('telescope.builtin')
-keymap(
-	"n",
-	"<C-p>",
-	"<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
-	opts
-)
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-
--- Nvimtree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-
--- keymap("v", "<C-_>", "gc", opts)
 
 -- LspSaga
 keymap("n", "gh", "<cmd>Lspsaga lsp_finder<cr>", opts)

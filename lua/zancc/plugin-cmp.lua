@@ -44,7 +44,6 @@ local kind_icons = {
 	Variable = " ",
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
-
 cmp.setup({
 	snippet = {
 		expand = function(args)

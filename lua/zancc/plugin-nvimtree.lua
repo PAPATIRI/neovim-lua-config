@@ -1,6 +1,5 @@
 -- following options are the default
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
-
 local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then
 	return
@@ -79,11 +78,11 @@ nvim_tree.setup({
 	disable_netrw = true,
 	hijack_netrw = true,
 	open_on_setup = false,
-	-- ignore_ft_on_setup = {
-	-- 	"startify",
-	-- 	"dashboard",
-	-- 	"alpha",
-	-- },
+	ignore_ft_on_setup = {
+		"startify",
+		"dashboard",
+		"alpha",
+	},
 	open_on_tab = false,
 	hijack_cursor = false,
 	update_cwd = true,
@@ -116,7 +115,7 @@ nvim_tree.setup({
 	},
 	view = {
 		width = 30,
-		hide_root_folder = false,
+		hide_root_folder = true,
 		side = "left",
 		mappings = {
 			custom_only = false,
@@ -135,7 +134,7 @@ nvim_tree.setup({
 	},
 	actions = {
 		open_file = {
-			quit_on_open = true,
+			quit_on_open = false,
 			window_picker = {
 				enable = false,
 			},
